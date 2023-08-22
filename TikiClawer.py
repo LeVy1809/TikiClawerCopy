@@ -171,8 +171,7 @@ class TikiClawer:
         print('Brand:', product['Brand'])
         print('Stock:', product['Stock'])
         print('Regular Price:', product['Regular price'])
-     
-    
-    
-        
-		
+        if  product['Sale price'] == '':
+            pass
+        else:
+            print('Sale Price:', product['Sale price'])

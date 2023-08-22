@@ -2,5 +2,5 @@ xpath_list_product_names = '//*[@id="__next"]/div/main/div/div/div/div/div/div/d
 brand_xpath = '//*[@id="__next"]/div[1]/main/div[3]/div[1]/div[3]/div[1]/div[1]/span/h6/a'
 ## Cập nhật lại
 productLinksXpath = '//a[contains(@class, "product-item")]'
-price_xpath = '//*[@id="__next"]/div[1]/main/div[3]/div[1]/div[3]/div[2]/div[1]/div[1]/div/div/div[1]'
+price_xpath = '//*[@id="__next"]/div[1]/main/div[3]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div/div'
 name_xpath = '//*[@id="__next"]/div[1]/main/div[3]/div[1]/div[3]/div[1]/h1'
