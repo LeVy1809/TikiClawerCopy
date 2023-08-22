@@ -126,7 +126,8 @@ class TikiClawer:
 
         except Exception as e:
             print(e)
-    
+
+
     # Lấy tên thương hiệu
     def getBrand(self, xpath):
         try:
@@ -151,7 +152,7 @@ class TikiClawer:
                 "Regular price": self.regular_price,
                 # "Images": self.image,
                 })
-            
+            product_list.append(product)
             print("Added!")
         except Exception as e:
             pass
@@ -164,6 +165,12 @@ class TikiClawer:
     def createCSV(self, data, path):
         pass
     
+    def print_product_info(self, product):
+        print('\nID:', product['ID'])
+        print('Name:', product['Name'])
+        print('Brand:', product['Brand'])
+        print('Stock:', product['Stock'])
+        print('Regular Price:', product['Regular price'])
      
     
     

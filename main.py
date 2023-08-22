@@ -11,7 +11,7 @@ tiki = TikiClawer()
 
 tiki.getUrl(tiki_url + keywords)
 links = tiki.getProductLinks(productLinksXpath)
-print(links)
+#print(links)
 
 total_products = []
 
@@ -27,11 +27,13 @@ for link in links:
     # Lấy name
     tiki.getName(name_xpath)
 
-    # lấy price
+    # Lấy giá
     tiki.getPrices(price_xpath)
 
     # them vao danh sach
     tiki.appendtoTotalProduct(total_products)
 
-print(total_products)
+for i in total_products:
+    tiki.print_product_info(i)
+
 tiki.stopProcess()
